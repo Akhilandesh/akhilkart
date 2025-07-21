@@ -1,0 +1,177 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-image: url(../../../Downloads/urban.jpg);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  padding: 15px 30px;
+  color: white;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li {
+  cursor: pointer;
+}
+.checkout-btn {
+  background-color: white;
+  color: black;
+  padding: 5px 10px; /* smaller padding */
+  border: none;
+  border-radius: 5px;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 14px; /* smaller text */
+  transition: background 0.3s ease;
+}
+
+.checkout-btn:hover {
+  background-color: white; /* Darker on hover */
+}
+
+.hero {
+  text-align: center;
+  padding: 40px 20px;
+  background: linear-gradient(to right, #e0f7fa, #ffffff);
+}
+
+.categories button {
+  margin: 10px;
+  padding: 10px 20px;
+  border: none;
+  background-color: #007aff;
+  color: white;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.products {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 40px 20px;
+  flex-wrap: wrap;
+}
+
+.product-card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  text-align: center;
+  width: 200px;
+}
+
+.product-card img {
+  width: 100%;
+  border-radius: 8px;
+}
+.search-form {
+  /* allow it to shrink on smaller screens */
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  margin: 0 20px;
+}
+
+.search-form input[type='text'] {
+  padding: 6px 12px;
+  font-size: 16px;
+  border: none;
+  border-radius: 20px;
+  width: 200px;
+}
+
+@media screen and (max-width: 600px) {
+  .navbar {
+    flex-wrap: wrap;
+  }
+  .search-form {
+    order: 3; /* moves below nav-links on small screens */
+    width: 100%;
+    margin: 10px 0;
+    justify-content: flex-start;
+  }
+  .search-form input[type='text'] {
+    padding: 8px 16px;
+    border-radius: 20px;
+    border: none;
+    width: 300px;
+  }
+  .checkout-btn {
+    background-color: white;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+}
+
+.buttons {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  flex: 1;
+}
+
+.buy {
+  background-color: #28a745; /* Green */
+  color: white;
+}
+
+.cart {
+  background-color: #007bff; /* Blue */
+  color: white;
+}
+.swipe-btn {
+  position: fixed;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  padding: 10px 15px;
+  background-color: #ffffffcc;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+.swipe-btn1 {
+  position: fixed;
+  top: 50%;
+  left: 20px;
+  transform: translateY(-50%);
+  padding: 10px 15px;
+  background-color: #ffffffcc;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
